@@ -239,4 +239,50 @@ There is an unprojected page https://localhost:9443/FrontendWeb/unprotected.jsp
 Welcome [WSPrincipal:UNAUTHENTICATED] 
 {com.ibm.wsspi.security.cred.uniqueId=user:BasicRealm/UNAUTHENTICATED, com.ibm.wsspi.security.cred.securityName=UNAUTHENTICATED}
 ```
+|Step 3c: Starting the CloudServer for the first time creates the resource directory:
+
+```
+Launching CloudServer (WebSphere Application Server 18.0.0.1/wlp-1.0.20.cl180120180309-2209) on Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_121-b13 (en_IE)
+[AUDIT   ] CWWKE0001I: The server CloudServer has been launched.
+[AUDIT   ] CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/18.0.0.1/lafiles/en.html
+[WARNING ] CWWKS3103W: There are no users defined for the BasicRegistry configuration of ID com.ibm.ws.security.registry.basic.config[basic].
+[AUDIT   ] CWWKZ0058I: Monitoring dropins for applications.
+[AUDIT   ] CWWKS4104A: LTPA keys created in 0.973 seconds. LTPA key file: C:/jtools/wlp/usr/servers/CloudServer/resources/security/ltpa.keys
+[AUDIT   ] CWPKI0803A: SSL certificate created in 3.340 seconds. SSL key file: C:/jtools/wlp/usr/servers/CloudServer/resources/security/cloudkey.jks
+[AUDIT   ] CWWKI0001I: The CORBA name server is now available at corbaloc:iiop:localhost:2812/NameService.
+[AUDIT   ] CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[AUDIT   ] CWWKZ0001I: Application CloudServices started in 17.998 seconds.
+[AUDIT   ] CWWKZ0009I: The application CloudServices has stopped successfully.
+[AUDIT   ] CWWKF0012I: The server installed the following features: [servlet-3.1, beanValidation-1.1, ssl-1.0, jndi-1.0, jca-1.7, jms-2.0, ejbPersistentTimer-3.2, appSecurity-2.0, j2eeManagement-1.1, jdbc-4.1, wasJmsServer-1.0, jaxrs-2.0, javaMail-1.5, cdi-1.2, webProfile-7.0, jcaInboundSecurity-1.0, jpa-2.1, jsp-2.3, ejbLite-3.2, managedBeans-1.0, jsf-2.2, ejbHome-3.2, jaxws-2.2, localConnector-1.0, jsonp-1.0, el-3.0, jaxrsClient-2.0, concurrent-1.0, appClientSupport-1.0, ejbRemote-3.2, javaee-7.0, jaxb-2.2, mdb-3.2, jacc-1.5, batch-1.0, ejb-3.2, json-1.0, jaspic-1.1, jpaContainer-2.1, distributedMap-1.0, websocket-1.1, wasJmsSecurity-1.0, wasJmsClient-2.0].
+[AUDIT   ] CWWKF0011I: The server CloudServer is ready to run a smarter planet.
+[AUDIT   ] CWWKI0002I: The CORBA name server is no longer available at corbaloc:iiop:localhost:2812/NameService.
+[AUDIT   ] CWWKE0036I: The server CloudServer stopped after 1 minutes, 22.439 seconds.
+```
+Step 3c.5: Clicking on the CloudService-link
+
+```
+Launching CloudServer (WebSphere Application Server 18.0.0.1/wlp-1.0.20.cl180120180309-2209) on Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_121-b13 (en_IE)
+[AUDIT   ] CWWKE0001I: The server CloudServer has been launched.
+[AUDIT   ] CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/18.0.0.1/lafiles/en.html
+[WARNING ] CWWKS3103W: There are no users defined for the BasicRegistry configuration of ID com.ibm.ws.security.registry.basic.config[basic].
+[AUDIT   ] CWWKZ0058I: Monitoring dropins for applications.
+[AUDIT   ] CWWKI0001I: The CORBA name server is now available at corbaloc:iiop:localhost:2812/NameService.
+[AUDIT   ] CWWKT0016I: Web application available (default_host): http://192.168.1.23:9081/CloudServicesEJB/
+[AUDIT   ] CWWKZ0001I: Application CloudServices started in 4.919 seconds.
+[AUDIT   ] CWWKF0012I: The server installed the following features: [servlet-3.1, beanValidation-1.1, ssl-1.0, jndi-1.0, jca-1.7, jms-2.0, ejbPersistentTimer-3.2, appSecurity-2.0, j2eeManagement-1.1, jdbc-4.1, wasJmsServer-1.0, jaxrs-2.0, javaMail-1.5, cdi-1.2, webProfile-7.0, jcaInboundSecurity-1.0, jpa-2.1, jsp-2.3, ejbLite-3.2, managedBeans-1.0, jsf-2.2, ejbHome-3.2, jaxws-2.2, localConnector-1.0, jsonp-1.0, el-3.0, jaxrsClient-2.0, concurrent-1.0, appClientSupport-1.0, ejbRemote-3.2, javaee-7.0, jaxb-2.2, mdb-3.2, jacc-1.5, batch-1.0, ejb-3.2, json-1.0, jaspic-1.1, jpaContainer-2.1, distributedMap-1.0, websocket-1.1, wasJmsSecurity-1.0, wasJmsClient-2.0].
+[AUDIT   ] CWWKF0011I: The server CloudServer is ready to run a smarter planet.
+[WARNING ] No assertion builder for type {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}TransportBinding registered.
+[WARNING ] No assertion builder for type {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}TransportToken registered.
+[WARNING ] No assertion builder for type {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}HttpsToken registered.
+[WARNING ] No assertion builder for type {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}Layout registered.
+[WARNING ] No assertion builder for type {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}Lax registered.
+[WARNING ] No assertion builder for type {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}IncludeTimestamp registered.
+[WARNING ] No assertion builder for type {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}AlgorithmSuite registered.
+[WARNING ] No assertion builder for type {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}Basic128 registered.
+[WARNING ] No assertion builder for type {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}SupportingTokens registered.
+[WARNING ] No assertion builder for type {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}SamlToken registered.
+[WARNING ] No assertion builder for type {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}WssSamlV20Token11 registered.
+[WARNING ] Interceptor for {http://ejbs.sample.cs.ibm.it/}CloudMessageServiceService has thrown exception, unwinding now
+None of the policy alternatives can be satisfied.
+```
 
