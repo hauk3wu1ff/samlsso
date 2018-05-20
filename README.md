@@ -2,6 +2,8 @@
 
 This is an IBM Websphere Liberty SAML SSO example described in this [article](https://www.ibm.com/developerworks/library/mw-1703-maurip1-bluemix/index.html).
 
+Also see the Websphere Liberty Knowledgebase: [Configuring SAML Web Browser SSO in Liberty](https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/twlp_config_saml_web_sso.html). Also see [SAML assertions across WebSphere Application Server security domains](https://www.ibm.com/developerworks/websphere/techjournal/1004_chao/1004_chao.html).
+
 ### Notes
 
 * In **Step 2b** *"Apply the security configuration to the IdentityServer profile"* / *"1. Create a key in a new keystore"*
@@ -233,7 +235,12 @@ Launching FrontendServer (WebSphere Application Server 18.0.0.1/wlp-1.0.20.cl180
 [AUDIT   ] CWWKF0012I: The server installed the following features: [servlet-3.1, beanValidation-1.1, ssl-1.0, jndi-1.0, jca-1.7, jms-2.0, ejbPersistentTimer-3.2, samlWeb-2.0, appSecurity-2.0, j2eeManagement-1.1, jdbc-4.1, wasJmsServer-1.0, jaxrs-2.0, javaMail-1.5, cdi-1.2, webProfile-7.0, jcaInboundSecurity-1.0, jpa-2.1, wsSecuritySaml-1.1, jsp-2.3, ejbLite-3.2, managedBeans-1.0, jsf-2.2, ejbHome-3.2, jaxws-2.2, localConnector-1.0, jsonp-1.0, el-3.0, jaxrsClient-2.0, concurrent-1.0, appClientSupport-1.0, ejbRemote-3.2, javaee-7.0, jaxb-2.2, mdb-3.2, jacc-1.5, batch-1.0, ejb-3.2, json-1.0, jaspic-1.1, jpaContainer-2.1, wsSecurity-1.1, distributedMap-1.0, websocket-1.1, wasJmsSecurity-1.0, wasJmsClient-2.0].
 [AUDIT   ] CWWKF0011I: The server FrontendServer is ready to run a smarter planet.
 ```
-There is an unprojected page https://localhost:9443/FrontendWeb/unprotected.jsp
+
+There is a url for downloading the Service Provider metadata, e.g. for our service provider called 'sp' it is: https://localhost:9443/ibm/saml20/sp/samlmetadata
+
+The samlweb-2.0 also sets up a default service provider, for which the meta-data url is: https://localhost:9443/ibm/saml20/defaultSP/samlmetadata
+
+There is an unprojected page https://localhost:9443/FrontendWeb/unprotected.jsp . The application navigates you there after clicking logout. You can also hit it directly.
 
 ```
 Welcome [WSPrincipal:UNAUTHENTICATED] 
