@@ -4,6 +4,8 @@ This is an IBM Websphere Liberty SAML SSO example described in this [article](ht
 
 Also see the Websphere Liberty Knowledgebase: [Configuring SAML Web Browser SSO in Liberty](https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/twlp_config_saml_web_sso.html). Also see [SAML assertions across WebSphere Application Server security domains](https://www.ibm.com/developerworks/websphere/techjournal/1004_chao/1004_chao.html).
 
+The tutorial uses the Liberty InstallUtility, which has options described in [Configuring repositories and proxy settings for the installUtility command](https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/twlp_config_installutility.html). It describes how to configure a proxy for networkaccess by the InstallUtility.
+
 ### Notes
 
 * In **Step 2b** *"Apply the security configuration to the IdentityServer profile"* / *"1. Create a key in a new keystore"*
